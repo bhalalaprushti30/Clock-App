@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock & Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="toggle-container">
+        <span class="toggle-label">Dark Mode</span>
+        <label class="toggle-switch">
+            <input type="checkbox" id="toggleDark">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="container">
+        <!-- Left Side: Clock Section -->
+        <div class="left-section">
+            <h2>Digital Clock</h2>
+            <div class="digital-clock" id="digitalClock"></div>
+            
+            <h2>Analog Clock</h2>
+            <canvas id="analogClock" width="200" height="200"></canvas>
+            
+            <h2>World Clock</h2>
+            <div class="world-clock" id="worldClock"></div>
+            
+            <h3 id="dateDisplay"></h3>
+            <h3 id="greeting"></h3>
+        </div>
+
+        <!-- Right Side: Stopwatch Section -->
+        <div class="right-section">
+            <h2>Stopwatch</h2>
+            <div class="stopwatch">
+                <p id="stopwatchDisplay">00:00:00</p>
+                <div class="stopwatch-buttons">
+                    <button id="startStopwatch">Start</button>
+                    <button id="stopStopwatch">Stop</button>
+                    <button id="resetStopwatch">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
